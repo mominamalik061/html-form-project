@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="project2.css">
+</head>
+<body>
+	<main>
+		<header>
+			<h1 id="title">Survey Form</h1>
+			<p id="description">
+				ThnakYOU For Taking Your Time For FeedBack
+			</p>
+		</header>
+		<!-- form -->
+		<form id="survey-form">
+			<div class="form-group">
+				<label for="name">NAME:</label>
+				<input type="name" id="name" name="name" placeholder= EnterYourName>
+			</div><br>
+			<div class="form-group">
+				<label for="email">EMAIL:</label>
+				<input type="email" id="email" name="email" placeholder=EnterYourEmail>
+			</div><br>
+			<div class="form-group">
+				<label for="number">AGE:</label>
+				<input type="number" id="number" name="age" placeholder=EnterYourAge>
+			</div>
+			<div class="form-group">
+				<label>
+					Choose A Role Thats Best Describes You:
+				</label>
+				<select name="occupation" id="dropdown">
+					<option selected disabled>Select Your Role</option>
+					<option value="student">Student</option>
+					<option value="full-time-job">Full Time Job</option>
+					<option value="part-time-job">Part Time Job</option>
+					<option value="prefer-not-to-say">Prefer Not To Say</option>
+					<option value="other">Other</option>
+					<!-- yaha par jo value lagai gai hai wo backaned ky lye hai waisy b same waisy hi work karta hai jaisy us ky bagair -->
+				</select>
+			</div>
+			<div class="form-group">
+				<label>
+					Would You Recommand Our Product To Friend?
+				</label>
+					<div class="radio-group">
+					<input type="radio" name="rating" id="never">
+					<label>Never</label>
+			        </div>
+					<div class="radio-group">
+						<input type="radio" name="rating" id="maybe">
+						<label>Maybe</label>
+					</div>
+					<div class="radio-group">
+						<input type="radio" name="rating" id="likely">
+						<label>Likely</label>
+					</div>
+					<div class="radio-group">
+						<input type="radio" name="rating" id="definitely">
+						<label>Definitely</label>
+			</div>
+			<div class="form-group">
+				<label>
+					Select Thing That Liked Our Product:
+				</label>
+					<div class="checkbox-group">
+					<input type="checkbox" name="liked" id="ui">
+					<label>UI</label>
+			        </div>
+					<div class="checkbox-group">
+						<input type="checkbox" name="liked" id="features">
+						<label>Features</label>
+					</div>
+					<div class="checkbox-group">
+						<input type="checkbox" name="liked" id="service">
+						<label>Service</label>
+					</div>
+					<div class="checkbox-group">
+						<input type="checkbox" name="rating" id="Simpleness">
+						<label>Simpleness</label>
+			</div>
+			<div class="form-group">
+				<label>Remarks:</label>
+				 <textarea name="remarks" id="remarks" placeholder="Tell Us How Can We Improve Us...."></textarea>
+			</div>
+			<div class="form-group">
+				<button id="submit" type="submit">Submit</button>
+			</div>
+
+		</form>
+	</main>
+
+</body>
+</html>
